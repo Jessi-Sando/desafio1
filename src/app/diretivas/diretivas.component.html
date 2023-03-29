@@ -1,0 +1,7 @@
+<div [ngClass]="{
+    success: estaCargando,
+    error: !estaCargando
+  }"
+  >
+    {{ estaCargando ? 'AHORA MISMO ESTA CARGANDO' : 'NO ESTA CARGANDO'  }}
+  </div> 
