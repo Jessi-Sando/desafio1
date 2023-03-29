@@ -1,7 +1,40 @@
 <div [ngClass]="{
-    success: estaCargando,
-    error: !estaCargando
+    success: estaHabilitado,
+    error: !estaHabilitado
   }"
-  >
-    {{ estaCargando ? 'AHORA MISMO ESTA CARGANDO' : 'NO ESTA CARGANDO'  }}
-  </div> 
+  ><p> {{ hoy | date:"dd/MM/yy" }}  A la fecha indicada estas son </p>
+  {{ estaHabilitado ? 'EMPRESAS HABILITADAS' : 'EMPRESAS EN PROCESO DE HABILITADAS'  }}
+
+    
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">EMPRESAS </th>
+        <th scope="col">LOCALIDADES</th>
+        <th scope="col">REDES SOCIALES</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div> 

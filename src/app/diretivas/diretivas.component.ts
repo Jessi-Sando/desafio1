@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 
 export class DiretivasComponent {
-  estaCargando = true;
+  estaHabilitado= true;
+  hoy: string | number | Date | undefined;
  }
